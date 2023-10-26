@@ -1,13 +1,13 @@
 # Covid19-Tracker
 Menampilkan Data Realtime COVID-19 Menggunakan Javascript 
 
-# Assinment3
+# Assignment3
 
 ```bash
-Nama          : Fitria Vuspita Dewi
-Code          : WDP-KS13-024
-Class Code    : WDP-KS13
-Instructor    : Melanaumi Fahriza
+Name              : Fitria Vuspita Dewi
+Participant Code  : WDP-KS13-024
+Class Code        : WDP-KS13
+Instructor        : Melanaumi Fahriza
 ```
 
 <h2>Latar Belakang</h2>
