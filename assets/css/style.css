@@ -1,0 +1,163 @@
+/* body start */
+body{
+    background: #ED4264;
+}
+/* body body end */
+
+/* styling container start */
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* styling container end */
+
+/* box start */
+.box{
+    width: 600px;
+    height: 550px;
+    background: #ED4264;
+    box-shadow: 5px 5px 25px 5px rgb(233, 230, 230), -5px -5px 25px 5px  rgb(233, 230, 230);
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+/* box end */
+
+/* update date start */
+#updateDate {
+color: white;
+font-weight: bold;
+font-style: italic;
+}
+
+#lastUpdateDate {
+  font-weight: bold;
+  color: #682147;
+}
+/* update date start */
+
+
+/* search-bar start */
+.search input{
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: inset 2px 2px 8px black;
+}
+
+.search button{
+    border-radius: 50px;
+    height: 40px;
+    width: 15%;
+    background: #7c0143;
+    color: white;
+    box-shadow: 0 4px 4px #ffdde1;
+}
+
+.search button:hover{
+    background: #33001b;
+}
+/* search-bar end */
+
+/* styling card start */
+.card-container{
+    width: 85%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-container img{
+    height: 40px;
+}
+
+.card{
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2), -5px -5px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    height: 120px;
+    padding: 20px 5px;
+    /* transform: translate(0px,-8px); */
+}
+
+.card h3{
+    color: #7c0143;
+}
+/* styling card end */
+
+/* CSS untuk popup error message start */
+.error-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.error-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#errorPopup span {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#errorPopup button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* CSS untuk popup error message end */
+
+
+/* Style untuk layar dengan lebar kurang dari 768px (misalnya, ponsel) */
+@media (max-width: 768px) {
+    body {
+      justify-content: flex-start;
+    }
+  
+    .box {
+      width: 90%;
+      height: auto;
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* Style untuk layar dengan lebar lebih besar dari 768px (misalnya, desktop) */
+  @media (min-width: 769px) {
+    body {
+      justify-content: center;
+    }
+  
+    .box {
+      width: 600px;
+      height: 550px;
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

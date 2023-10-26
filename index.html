@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link custom file css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>COVID-19 TRACKER - FITRIA VUSPITA DEWI</title>
+    <link rel="icon" href="assets/img/virus.png">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="box">
+        <h1>COVID-19 TRACKER</h1>
+        <p id="updateDate">Last Updated: <span id="lastUpdateDate">-</span></p>
+        <form class="search" id="search-bar">
+          <input type="text" id="countryInput" placeholder="Search Country...">
+          <button id="getDataButton" type="submit">Get Data</button>
+        </form>
+        <!-- active cases start -->
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/img/active.png" alt="">
+            <h4>Active Cases</h4>
+            <h3 id="activeCases">-</h3>
+          </div>
+          <!-- active cases end -->
+          
+          <!-- new cases start -->
+          <div class="card">
+            <img src="assets/img/analysis.png" alt="">
+            <h4>New Cases</h4>
+            <h3 id="newCases">-</h3>
+          </div>
+          <!-- new cases start -->
+  
+          <!-- recovered cases start -->
+          <div class="card">
+            <img src="assets/img/recovery.png" alt="">
+            <h4>Recovered Cases</h4>
+            <h3 id="recoveredCases">-</h3>
+          </div>
+          <!-- recovered cases end -->
+  
+          <!-- total cases start -->
+          <div class="card">
+            <img src="assets/img/totalCases.png" alt="">
+            <h4>Total Cases</h4>
+            <h3 id="totalCases">-</h3>
+          </div>
+          <!-- total cases end -->
+  
+          <!-- total deaths start -->
+          <div class="card">
+            <img src="assets/img/rip.png" alt="">
+            <h4>Total Deaths</h4>
+            <h3 id="totalDeaths">-</h3>
+          </div>
+          <!-- total deaths end -->
+
+          <!-- total test start -->
+          <div class="card">
+            <img src="assets/img/pcr-test.png" alt="">
+            <h4>Total Test</h4>
+            <h3 id="totalTests">-</h3>
+          </div>
+          <!-- total test end -->
+
+          <!-- Popup untuk error message -->
+          <div class="error-popup" id="errorPopup">
+            <div class="error-content">
+              <span id="errorMessage"></span>
+              <button id="closeErrorPopup">Tutup</button>
+            </div>
+          </div>
+          <!-- Popup untuk error message -->
+        </div>
+      </div>
+    </div>
+
+    <!-- link custom file js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
