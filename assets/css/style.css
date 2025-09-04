@@ -1,95 +1,206 @@
 /* body start */
-body{
-    background: #ED4264;
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffe4ec 100%);
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-/* body body end */
 
 /* styling container start */
-.container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* styling container end */
 
 /* box start */
-.box{
-    width: 600px;
-    height: 550px;
-    background: #ED4264;
-    box-shadow: 5px 5px 25px 5px rgb(233, 230, 230), -5px -5px 25px 5px  rgb(233, 230, 230);
-    text-align: center;
-    align-content: center;
-    padding: 20px;
-    border-radius: 20px;
+/* Main Box */
+.box {
+  width: 600px;
+  min-height: 550px;
+  background: #fff;
+  box-shadow: 0 8px 32px 0 rgba(44, 44, 84, 0.1);
+  text-align: center;
+  align-content: center;
+  padding: 32px 20px 24px 20px;
+  border-radius: 28px;
 }
 /* box end */
 
 /* update date start */
-#updateDate {
-color: white;
-font-weight: bold;
-font-style: italic;
-}
-
+/* Update Date */
+#updateDate,
 #lastUpdateDate {
+  color: #a78bfa;
   font-weight: bold;
-  color: #682147;
+  font-style: italic;
 }
 /* update date start */
 
-
 /* search-bar start */
-.search input{
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: inset 2px 2px 8px black;
+/* Search Bar */
+.search {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 18px;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
 }
-
-.search button{
-    border-radius: 50px;
-    height: 40px;
-    width: 15%;
-    background: #7c0143;
-    color: white;
-    box-shadow: 0 4px 4px #ffdde1;
+.input-group {
+  position: relative;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+  margin-bottom: 0;
 }
-
-.search button:hover{
-    background: #33001b;
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a78bfa;
+  pointer-events: none;
+}
+.search input {
+  border-radius: 50px;
+  padding: 10px 10px 10px 38px;
+  width: 100%;
+  min-width: 120px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #fbcfe8;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(168, 139, 250, 0.08);
+  transition: border 0.2s;
+  background: #f8fafc;
+}
+.search input:focus {
+  border: 2px solid #a78bfa;
+}
+.search button {
+  margin-top: 0;
+  width: auto;
+  min-width: 110px;
+  max-width: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 18px;
+  white-space: nowrap;
+  border-radius: 50px;
+  height: 40px;
+  background: linear-gradient(90deg, #a78bfa 0%, #fbcfe8 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 12px #a78bfa4d;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.search button:hover {
+  background: linear-gradient(90deg, #fbcfe8 0%, #a78bfa 100%);
+  transform: translateY(-2px) scale(1.04);
 }
 /* search-bar end */
 
 /* styling card start */
-.card-container{
-    width: 85%;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+/* Card Container & Card */
+.card-container {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
-
-.card-container img{
-    height: 40px;
+.card-container img {
+  height: 40px;
+  margin-bottom: 8px;
 }
-
-.card{
-    background: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2), -5px -5px 5px rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    height: 120px;
-    padding: 20px 5px;
-    /* transform: translate(0px,-8px); */
+.card {
+  background: linear-gradient(120deg, #f8fafc 60%, #ffe4ec 100%);
+  box-shadow: 0 4px 16px rgba(168, 139, 250, 0.1);
+  border-radius: 18px;
+  min-height: 120px;
+  padding: 18px 8px 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
 }
-
-.card h3{
-    color: #7c0143;
+.card:hover {
+  box-shadow: 0 8px 32px rgba(168, 139, 250, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.card h4,
+.card h3 {
+  color: #a78bfa;
+  font-weight: 600;
+}
+.card h4 {
+  font-size: 1.05rem;
+  margin: 0 0 4px 0;
+}
+.card h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+/* Card modern */
+.card-container {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.card-container img {
+  height: 40px;
+  margin-bottom: 8px;
+}
+.card {
+  background: linear-gradient(120deg, #fff 60%, #ffdde1 100%);
+  box-shadow: 0 4px 16px rgba(237, 66, 100, 0.1);
+  border-radius: 12px;
+  min-height: 120px;
+  padding: 18px 8px 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(237, 66, 100, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.card h4 {
+  font-size: 1.05rem;
+  color: #682147;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+.card h3 {
+  color: #ed4264;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 700;
 }
 /* styling card end */
 
 /* CSS untuk popup error message start */
+/* Error Popup */
 .error-popup {
   display: none;
   position: fixed;
@@ -97,67 +208,92 @@ font-style: italic;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(168, 139, 250, 0.18);
   z-index: 9999;
 }
-
 .error-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
+  background: #fff;
+  padding: 28px 24px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px rgba(168, 139, 250, 0.18);
+  border-radius: 16px;
 }
-
 #errorPopup span {
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
+  color: #a78bfa;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
-
 #errorPopup button {
-  background: red;
+  background: linear-gradient(90deg, #a78bfa 0%, #fbcfe8 100%);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 28px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 16px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px #a78bfa4d;
+  transition: background 0.2s, transform 0.2s;
+}
+#errorPopup button:hover {
+  background: linear-gradient(90deg, #fbcfe8 0%, #a78bfa 100%);
+  transform: scale(1.05);
 }
 /* CSS untuk popup error message end */
 
-
 /* Style untuk layar dengan lebar kurang dari 768px (misalnya, ponsel) */
-@media (max-width: 768px) {
-    body {
-      justify-content: flex-start;
-    }
-  
-    .box {
-      width: 90%;
-      height: auto;
-    }
-  
-    .card-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
+/* Responsive */
+@media (max-width: 900px) {
+  .box {
+    width: 98%;
+    min-height: 400px;
+    padding: 18px 4vw;
   }
-  
-  /* Style untuk layar dengan lebar lebih besar dari 768px (misalnya, desktop) */
-  @media (min-width: 769px) {
-    body {
-      justify-content: center;
-    }
-  
-    .box {
-      width: 600px;
-      height: 550px;
-    }
-  
-    .card-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
   }
-  
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+    min-height: 300px;
+    padding: 12px 2vw;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    gap: 4px;
+  }
+  .search {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .input-group {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .search input {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .search button {
+    width: 100%;
+    min-width: 0;
+    margin-top: 8px;
+    padding: 0 18px;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+}
